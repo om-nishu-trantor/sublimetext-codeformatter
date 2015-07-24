@@ -17,6 +17,7 @@ try:
 	from .jsformatter import JsFormatter
 	from .htmlformatter import HtmlFormatter
 	from .cssformatter import CssFormatter
+	from .scssformatter import ScssFormatter
 	from .pyformatter import PyFormatter
 
 except (ValueError):
@@ -25,6 +26,7 @@ except (ValueError):
 	from jsformatter import JsFormatter
 	from htmlformatter import HtmlFormatter
 	from cssformatter import CssFormatter
+	from scssformatter import ScssFormatter
 	from pyformatter import PyFormatter
 
 
@@ -39,6 +41,7 @@ class Formatter:
 			'asp': HtmlFormatter,
 			'xml': HtmlFormatter,
 			'css': CssFormatter,
+			'scss': ScssFormatter,
 			'less': CssFormatter,
 			'python': PyFormatter
 		}

@@ -11,6 +11,7 @@ CodeFormatter has support for the following languages:
 * JavaScript/JSON - By JSBeautifier
 * HTML - By JSBeautifier
 * CSS - By JSBeautifier
+* SCSS - By Nishutosh Sharma
 * Python - By PythonTidy (only ST2)
 
 
@@ -151,6 +152,21 @@ Language specific options:
 		"end_with_newline": false // Add new line of end in file
 	}
 ```
+### SCSS
+SCSS - Simply modified the CSS formatter module as per the response from scss-lint (Gives way to modify further)
+
+Language specific options:
+```js
+	"codeformatter_scss_options":
+	{
+		"indent_size": 2, // Indentation size
+		"indent_char": " ", // Indentation character
+		"indent_with_tabs": false, // Indent with one tab (overrides indent_size and indent_char options)
+		"selector_separator_newline": true, // Add new lines after selector separators
+		"end_with_newline": true // Add new line of end in file
+	}
+```
+
 ### Python
 Python - used [PythonTidy] (https://pypi.python.org/pypi/PythonTidy/) by Chuck Rhode
 
