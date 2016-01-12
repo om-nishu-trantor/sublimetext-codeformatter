@@ -87,7 +87,7 @@ Language specific options:
 		"pear_switch_without_indent": false, // Disable extra switch identation
 		"lowercase": false, // Lowercase all control structures. Such as TRUE, FALSE, SWITCH and more
 		"fluent": false, // Create fluent style for multi-level object access.
-		"list_class_function": false, // Create a list of functions and classes in the script By default, this Filter puts the list at the beggining of the script.
+		"list_class_function": false, // Create a list of functions and classes in the script By default, this Filter puts the list at the beginning of the script.
 		"equals_align": false, // Align the equals symbols in contiguous lines.
 		"phpbb": false, // Format the code to make it compatible with phpBB Coding Standards (if enabled, overrides some another options)
 		"space_in_paren": false, // Add padding spaces within paren if not empty, ie. f( a, b ),g()
@@ -98,7 +98,7 @@ Language specific options:
 
 
 ### Javascript/JSON
-Javascript/JSON/JSONP - used [JSBeautifier] (http://jsbeautifier.org/) by Einar Lielmanis
+Javascript/JSON - used [JSBeautifier] (http://jsbeautifier.org/) by Einar Lielmanis
 
 Language specific options:
 ```js
@@ -107,9 +107,11 @@ Language specific options:
 		"indent_size": 4, // indentation size
 		"indent_char": " ", // Indent character
 		"indent_with_tabs": false, // Indent with one tab (overrides indent_size and indent_char options)
+        "eol": "\n", // EOL symbol
 		"preserve_newlines": false, // whether existing line breaks should be preserved,
 		"max_preserve_newlines": 10, // maximum number of line breaks to be preserved in one chunk
 		"space_in_paren": false, // Add padding spaces within paren, ie. f( a, b )
+		"space_in_empty_paren": false, // Add padding spaces within paren if parent empty, ie. f(  )
 		"e4x": false, // Pass E4X xml literals through untouched
 		"jslint_happy": false, // if true, then jslint-stricter mode is enforced. Example function () vs function()
 		"brace_style": "collapse", // "collapse" | "expand" | "end-expand". put braces on the same line as control statements (default), or put braces on own line (Allman / ANSI style), or just put end braces on own line.
@@ -118,7 +120,9 @@ Language specific options:
 		"eval_code": false, // eval code
 		"unescape_strings": false, // Decode printable characters encoded in xNN notation
 		"wrap_line_length": 0, // Wrap lines at next opportunity after N characters
-		"break_chained_methods": false // Break chained method calls across subsequent lines
+		"break_chained_methods": false, // Break chained method calls across subsequent lines
+		"end_with_newline": false, // Add new line at end of file
+		"comma_first": false, // Add comma first
 	}
 ```
 
@@ -149,7 +153,9 @@ Language specific options:
 		"indent_char": " ", // Indentation character
 		"indent_with_tabs": false, // Indent with one tab (overrides indent_size and indent_char options)
 		"selector_separator_newline": false, // Add new lines after selector separators
-		"end_with_newline": false // Add new line of end in file
+		"end_with_newline": false, // Add new line of end in file
+		"newline_between_rules": false, // Add new line between rules
+        "eol": "\n" // EOL symbol
 	}
 ```
 ### SCSS

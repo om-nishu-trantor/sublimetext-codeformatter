@@ -1,8 +1,8 @@
-# @author 		Avtandil Kikabidze
+# @author           Avtandil Kikabidze
 # @contributors Avtandil Kikabidze, Nishutosh Sharma
-# @copyright 		Copyright (c) 2008-2014, Avtandil Kikabidze aka LONGMAN (akalongman@gmail.com)
+# @copyright        Copyright (c) 2008-2015, Avtandil Kikabidze aka LONGMAN (akalongman@gmail.com)
 # @link 			http://long.ge
-# @license 		GNU General Public License version 2 or later;
+# @license 		The MIT License (MIT)
 
 import sublime
 import sys
